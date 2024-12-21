@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  img {
+    display: flex;
+    object-fit: cover;
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  a {
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    font-family: $main-ff;
+  }
+  
+  main {
+    flex-grow: 1;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  

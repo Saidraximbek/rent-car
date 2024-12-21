@@ -1,0 +1,59 @@
+.header {
+  margin-top: 3rem;
+  padding-bottom: 2.7rem;
+  border-bottom: solid 1.5px $header-border-color;
+}
+
+.sitenav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sitenav__log-ctg {
+  display: flex;
+}
+
+.sitenav__logo-ctg {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sitenav__list {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.sitenav__list__item {
+  @include boxDisplayFlex(flex, center, center);
+  gap: 0.8rem;
+  font-family: Montserrat;
+  @include fontStyle(1.8rem, 500, 1.15);
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.sitenav__login-div {
+    @include boxDisplayFlex (flex, center, center);
+    gap: 2.4rem;
+}
+
+.site__login-div_num {
+    @include fontStyle (1.8rem, 600, 1.15)
+}
+
+.login__btn {
+    @include boxDisplayFlex (flex, center, center);
+    color: $light-background-color;
+    background-color: $light-primary-color;
+    
+}
+
+.moon {
+    padding: 1.8rem;
+    background-color: $moon-bg-color;
+    border-radius: 50%;
+}
+

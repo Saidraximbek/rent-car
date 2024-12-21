@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Car Rental</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <nav class="sitenav container">
+        <div class="sitenav__logo-ctg">
+          <img src="./images/Logo (2).svg" alt="site logo" />
+          <ul class="sitenav__list">
+            <li class="sitenav__list__item">Categories</li>
+            <li class="sitenav__list__item">
+              About Us
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.1528 8.22212C15.4213 8.4906 15.4213 8.9259 15.1528 9.19439L11.4861 12.8611C11.2177 13.1295 10.7824 13.1295 10.5139 12.8611L6.84721 9.19439C6.57872 8.9259 6.57872 8.4906 6.84721 8.22212C7.11569 7.95363 7.55099 7.95363 7.81948 8.22212L11 11.4026L14.1805 8.22212C14.449 7.95363 14.8843 7.95363 15.1528 8.22212Z"
+                  fill="black"
+                />
+              </svg>
+            </li>
+            <li class="sitenav__list__item">
+              Help center
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.1528 8.22212C15.4213 8.4906 15.4213 8.9259 15.1528 9.19439L11.4861 12.8611C11.2177 13.1295 10.7824 13.1295 10.5139 12.8611L6.84721 9.19439C6.57872 8.9259 6.57872 8.4906 6.84721 8.22212C7.11569 7.95363 7.55099 7.95363 7.81948 8.22212L11 11.4026L14.1805 8.22212C14.449 7.95363 14.8843 7.95363 15.1528 8.22212Z"
+                  fill="black"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sitenav__login-div">
+          <p class="site__login-div_num">+1 855 420 0000</p>
+          <img class="moon" src="./images/Moon.png" alt="moon" />
+          <span class="login__btn btn">
+            Login
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.3125 17.4166C10.3125 17.0369 10.6203 16.7291 11 16.7291H16.5C16.6265 16.7291 16.7291 16.6265 16.7291 16.4999L16.7291 5.49992C16.7291 5.37335 16.6265 5.27075 16.5 5.27075L11 5.27075C10.6203 5.27075 10.3125 4.96295 10.3125 4.58325C10.3125 4.20356 10.6203 3.89575 11 3.89575H16.5C17.3859 3.89575 18.1041 4.61396 18.1041 5.49992V16.4999C18.1041 17.3859 17.3859 18.1041 16.5 18.1041H11C10.6203 18.1041 10.3125 17.7963 10.3125 17.4166Z"
+                fill="white"
+              />
+              <path
+                d="M3.20831 12.0222C3.20831 12.5285 3.61872 12.9389 4.12498 12.9389H8.5763C8.59732 13.2647 8.62363 13.5902 8.65524 13.9154L8.68243 14.1952C8.72664 14.65 9.20968 14.9225 9.62183 14.7249C11.2974 13.9219 12.8143 12.8231 14.0995 11.4812L14.127 11.4525C14.3718 11.1969 14.3718 10.7937 14.127 10.5381L14.0995 10.5094C12.8143 9.16753 11.2974 8.06866 9.62183 7.26564C9.20969 7.06812 8.72664 7.34055 8.68243 7.79544L8.65524 8.0752C8.62363 8.40037 8.59732 8.72592 8.5763 9.05173L4.12498 9.05173C3.61872 9.05173 3.20831 9.46214 3.20831 9.9684V12.0222Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main class="main">
+      <section class="hero">
+        <div class="hero-container container">
+          <img src="./images/malibu.png" alt="malibu" />
+          <div class="hero__svgs">
+            <img src="./images/Carousel.svg" alt="Carousel" />
+            <div class="hero__svgs__arrows">
+              <img src="./images/Caret left.svg" alt="left" />
+              <img src="./images/Caret right.svg" alt="right" />
+            </div>
+          </div>
+
+          <div class="hero__search">
+            <input
+              class="hero__search__input"
+              type="text"
+              placeholder="Find the car of your dreams"
+            />
+            <img class="hero__search__img" src="./images/Search.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card__container container">
+          <div class="card__info">
+            <h2 class="card__title">Choose the car of your dreams</h2>
+            <p class="card__subtitle">
+              We provide our customers with the most incredible driving
+              emotions. That is why there are only world-class cars in our fleet
+            </p>
+          </div>
+
+          <div class="card__btns">
+            <a href="#" class="btn card__btn">Compact</a>
+            <a href="#" class="btn card__btn">Sports cars</a>
+            <a href="#" class="btn card__btn">Vans</a>
+          </div>
+
+          <div class="car__cards">
+            <div class="card__car">
+              <div class="card__card__titles">
+                <h4 class="card__car__title">Ford Fiesta</h4>
+                <p class="card__car__subtitle">Economy Car</p>
+              </div>
+
+              <img src="./images/ford white car.png" alt="" />
+
+              <div class="card__speciality">
+                <div class="card__spc__first">
+                  <span>
+                    <img src="./images/User.svg" alt="" />
+                    5 Seats
+                  </span>
+                  <span>
+                    <img src="./images/gear 1.svg" alt="" />
+                    Automatic
+                  </span>
+                </div>
+                <div class="card__spc__first">
+                  <span>
+                    <img src="./images/File-user.svg" alt="" />
+                    21+ Years
+                  </span>
+                  <span>
+                    <img src="./images/petrol 1.svg" alt="" />
+                    1 lit/2.5 km
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="card__car">
+              <div class="card__card__titles">
+                <h4 class="card__car__title">Nissan Versa</h4>
+                <p class="card__car__subtitle">Compact Car</p>
+              </div>
+
+              <img src="./images/nissan red car.png" alt="" />
+
+              <div class="card__speciality">
+                <div class="card__spc__first">
+                  <span>
+                    <img src="./images/User.svg" alt="" />
+                    5 Seats
+                  </span>
+                  <span>
+                    <img src="./images/gear 1.svg" alt="" />
+                    Automatic
+                  </span>
+                </div>
+                <div class="card__spc__first">
+                  <span>
+                    <img src="./images/File-user.svg" alt="" />
+                    21+ Years
+                  </span>
+                  <span>
+                    <img src="./images/petrol 1.svg" alt="" />
+                    1 lit/2.5 km
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="card__car">
+              <div class="card__card__titles">
+                <h4 class="card__car__title">Toyota Corolla</h4>
+                <p class="card__car__subtitle">Mid-size Car</p>
+              </div>
+
+              <img src="./images/toyoto white car.png" alt="" />
+
+              <div class="card__speciality">
+                <div class="card__spc__first">
+                  <span>
+                    <img src="./images/User.svg" alt="" />
+                    5 Seats
+                  </span>
+                  <span>
+                    <img src="./images/gear 1.svg" alt="" />
+                    Automatic
+                  </span>
+                </div>
+                <div class="card__spc__first">
+                  <span>
+                    <img src="./images/File-user.svg" alt="" />
+                    21+ Years
+                  </span>
+                  <span>
+                    <img src="./images/petrol 1.svg" alt="" />
+                    1 lit/2.5 km
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="card__car">
+              <div class="card__card__titles">
+                <h4 class="card__car__title">Nissan Rogue</h4>
+                <p class="card__car__subtitle">Mid-size SUV</p>
+              </div>
+
+              <img src="./images/nissan red car.png" alt="" />
+
+              <div class="card__speciality">
+                <div class="card__spc__first">
+                  <span>
+                    <img src="./images/User.svg" alt="" />
+                    5 Seats
+                  </span>
+                  <span>
+                    <img src="./images/gear 1.svg" alt="" />
+                    Automatic
+                  </span>
+                </div>
+                <div class="card__spc__first">
+                  <span>
+                    <img src="./images/File-user.svg" alt="" />
+                    21+ Years
+                  </span>
+                  <span>
+                    <img src="./images/petrol 1.svg" alt="" />
+                    1 lit/2.5 km
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="card__car">
+              <div class="card__card__titles">
+                <h4 class="card__car__title">Chevy Traverse</h4>
+                <p class="card__car__subtitle">Full-size SUV</p>
+              </div>
+
+              <img src="./images/traverse.png" alt="" />
+
+              <div class="card__speciality">
+                <div class="card__spc__first">
+                  <span>
+                    <img src="./images/User.svg" alt="" />
+                    5 Seats
+                  </span>
+                  <span>
+                    <img src="./images/gear 1.svg" alt="" />
+                    Automatic
+                  </span>
+                </div>
+                <div class="card__spc__first">
+                  <span>
+                    <img src="./images/File-user.svg" alt="" />
+                    21+ Years
+                  </span>
+                  <span>
+                    <img src="./images/petrol 1.svg" alt="" />
+                    1 lit/2.5 km
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="card__car">
+              <div class="card__card__titles">
+                <h4 class="card__car__title">Nissan Altima</h4>
+                <p class="card__car__subtitle">Full-size Car</p>
+              </div>
+
+              <img src="./images/nissan red fast car.png" alt="" />
+
+              <div class="card__speciality">
+                <div class="card__spc__first">
+                  <span>
+                    <img src="./images/User.svg" alt="" />
+                    5 Seats
+                  </span>
+                  <span>
+                    <img src="./images/gear 1.svg" alt="" />
+                    Automatic
+                  </span>
+                </div>
+                <div class="card__spc__first">
+                  <span>
+                    <img src="./images/File-user.svg" alt="" />
+                    21+ Years
+                  </span>
+                  <span>
+                    <img src="./images/petrol 1.svg" alt="" />
+                    1 lit/2.5 km
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="card___view-btn btn"> View all Cars</a>
+        </div>
+      </section>
+
+      <!-- brands section start -->
+      <section class="brands container">
+        <h3 class="brands__title">More than 50 brands of cars</h3>
+
+        <div class="brands__images">
+          <img src="./images/ford.png" alt="" />
+          <img src="./images/nissan.png" alt="" />
+          <img src="./images/toyota.png" alt="" />
+          <img src="./images/dodge.png" alt="" />
+          <img src="./images/hyundai.png" alt="" />
+          <img src="./images/volkswagen-vector-svg-3 3.png" alt="" />
+        </div>
+      </section>
+      <!-- brands section end -->
+
+      <section class="service container">
+        <div class="card__info" style="width: 68.4rem">
+          <h2 class="card__title">Unparalleled service</h2>
+          <p class="card__subtitle">
+            Whether you are looking for Newark Airport car rental, an insurance
+            replacement vehicle or minivan to take on vacation Car rental has it
+            all.
+          </p>
+        </div>
+
+        <div class="service__cards">
+          <div class="service__card">
+            <div class="service__card__info">
+              <h3 class="service__card__title">
+                Book online, <br />
+                pay online
+              </h3>
+
+              <p class="service__card__subtitle">
+                Complete the booking process A-Z, with our easy online system
+              </p>
+            </div>
+
+            <img src="./images/Desktop.svg" alt="" />
+          </div>
+          <div class="service__card">
+            <div class="service__card__info">
+              <h3 class="service__card__title">
+                Guaranteed car <br />
+                reservation
+              </h3>
+
+              <p class="service__card__subtitle">
+                When you book with Car rental, you can be confident your car
+                will be waiting for you
+              </p>
+            </div>
+
+            <img src="./images/Shield.svg" alt="" />
+          </div>
+          <div class="service__card">
+            <div class="service__card__info">
+              <h3 class="service__card__title">
+                Unparalleled <br />
+                customer service
+              </h3>
+
+              <p class="service__card__subtitle">
+                We're here to help. We pride ourselves in our customer service
+              </p>
+            </div>
+
+            <img src="./images/User-clock.svg" alt="" />
+          </div>
+          <div class="service__card">
+            <div class="service__card__info">
+              <h3 class="service__card__title">
+                No reservation or <br />
+                booking fees
+              </h3>
+
+              <p class="service__card__subtitle">
+                No cancellation fees if cancelled 24 hours prior to booking time
+              </p>
+            </div>
+
+            <img src="./images/Wallet.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="safe container">
+        <div class="safe__info">
+          <div class="safe__titles">
+            <h2 class="safe__title">Car rental keeps you safe</h2>
+            <p class="safe__subtitle">
+              The safety of our employees and renters is our number one
+              priority. In addition to being confident your vehicle is cleaned
+              and sanitized every time you rent, you can also feel confident
+              that we will take every opportunity to enhance the health and
+              safety measures currently practiced in our operations.
+            </p>
+          </div>
+
+          <div class="safe__cards">
+            <div class="safe__card">
+              <img src="./images/Flask-alt.svg" alt="" />
+              <h4 class="safe__card__title">
+                Every car is thoroughly sanitized and cleaned
+              </h4>
+            </div>
+            <div class="safe__card">
+              <img src="./images/Heartbeat.svg" alt="" />
+              <h4 class="safe__card__title">All of our employees wear masks</h4>
+            </div>
+            <div class="safe__card">
+              <img src="./images/Folder-lock.svg" alt="" />
+              <h4 class="safe__card__title">
+                We stay up to date with all protocol from the CDC
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="circle"></div>
+        <img class="master__img" src="./images/master bro.png" alt="" />
+      </section>
+    </main>
+
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__first-div">
+          <div class="logo-div">
+            <img src="./images/Logo (2).svg" alt="" />
+            <p class="logo-div__subtitle">
+              Car rental offers a wide range of cars available for rent in
+              Newark EWR Airport NJ. We pride ourselves in our customer service,
+              and hassle-free renting experience.
+            </p>
+          </div>
+          <ul class="footer__first-list">
+            <li class="footer__first-list__item">
+              <a href="#" class="footer__item__bold">Main</a>
+              <a href="#" class="footer__item__regular">My Bookings</a>
+              <a href="#" class="footer__item__regular">Reservation</a>
+            </li>
+            <li class="footer__first-list__item">
+              <a href="#" class="footer__item__bold">Categories</a>
+              <a href="#" class="footer__item__regular">Compact</a>
+              <a href="#" class="footer__item__regular">Sports cars</a>
+              <a href="#" class="footer__item__regular">Vans</a>
+            </li>
+            <li class="footer__first-list__item">
+              <a href="#" class="footer__item__bold">Company</a>
+              <a href="#" class="footer__item__regular">About us</a>
+              <a href="#" class="footer__item__regular">Careers</a>
+              <a href="#" class="footer__item__regular">News</a>
+              <a href="#" class="footer__item__regular">Contact us</a>
+            </li>
+            <li class="footer__first-list__item" style="width: 20.4rem">
+              <a href="#" class="footer__item__bold">Our Locations</a>
+              <a href="#" class="footer__item__regular"
+                >2118 Thornridge Cir. Syracuse</a
+              >
+              <a href="#" class="footer__item__regular"
+                >4140 Parker Rd. Allentown</a
+              >
+              <a href="#" class="footer__item__regular">4517 Washington Ave.</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__second-div">
+          <p class="footer__item__bold">© 2022 Car rental Terms & Conditions</p>
+          <ul class="footer__second-list">
+            <li class="footer__first-list__item">
+              <a href="#" class="footer__item__bold">Contact</a>
+              <a href="#" class="footer__item__regular">+1 855 420 0000</a>
+              <a href="#" class="footer__item__regular">carrental@gmail.com</a>
+            </li>
+            <li class="footer__first-list__item" style="width: 15.2rem">
+              <a href="#" class="footer__item__bold">Hours of operation</a>
+              <a href="#" class="footer__item__regular"
+                >8:00 - 21:00 Mon-Sat
+              </a>
+              <a href="#" class="footer__item__regular">9:00 - 15:00 Sundays</a>
+            </li>
+            <li class="footer__first-list__item" style="margin-right: 5rem">
+              <a href="#" class="footer__item__bold">Social network</a>
+              <div class="footer__socials">
+                <img src="./images/instagram.svg" alt="" />
+                <img src="./images/twitter.svg" alt="" />
+                <img src="./images/facebook.svg" alt="" />
+                <img src="./images/watsup.svg" alt="" />
+              </div>
+            </li>
+            <li>
+              <img class="arrow-up" src="./images/Arrow up.svg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- footer start -->
+  </body>
+</html>

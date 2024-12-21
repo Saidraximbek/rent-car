@@ -1,0 +1,5 @@
+.btn {
+    @include fontStyle (1.8rem, 500, 1.15);
+    padding: 1.8rem 3rem;
+    border-radius: 10rem;
+}
