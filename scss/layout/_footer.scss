@@ -1,0 +1,75 @@
+// Footer start
+
+.footer {
+    border-top: solid 1.5px var(--header-border-color);
+    padding-top: 4rem;
+    color: var(--white-555);
+  }
+  
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .footer__first-div {
+    @include boxDisplayFlex(flex, center, space-between);
+  }
+  
+  .logo-div {
+    width: 24rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .logo-div__subtitle {
+    @include fontStyle(1.2rem, 400, 1.7);
+    color: var(--white-555);
+  }
+  
+  .footer__first-list {
+    @include boxDisplayFlex(flex, start, start);
+    gap: 11rem;
+    margin-top: 4rem;
+  }
+  
+  .footer__second-list {
+    @include boxDisplayFlex(flex, start, start);
+    gap: 4.9rem;
+    border-top: solid 1.5px var(--header-border-color);
+    padding-top: 4rem;
+  }
+  
+  .footer__first-list__item {
+    @include boxDisplayFlex(flex, start, start);
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  
+  .footer__item__bold {
+    @include fontStyle(1.6rem, 500, 1.2);
+    color: var(--secondary-color);
+  }
+  
+  .footer__item__regular {
+    @include fontStyle(1.4rem, 500, 1.3);
+    color: var(--white-555);
+  }
+  
+  .footer__second-div {
+    @include boxDisplayFlex(flex, center, start);
+    gap: 25rem;
+  }
+  
+  .footer__socials {
+    @include boxDisplayFlex(flex, center, start);
+    gap: 1.5rem;
+  }
+  
+  .arrow-up {
+    padding: 2.8rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+  }
+  

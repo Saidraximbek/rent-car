@@ -28,7 +28,7 @@
 
 .hero__svgs__arrows img {
   padding: 0.8rem;
-  background-color: $light-background-color;
+  background-color: var(--input-bg);
   border-radius: 50%;
 }
 
@@ -42,14 +42,14 @@
   border-radius: 10rem;
   position: relative;
   bottom: 7rem;
-  background-color: $light-background-color;
+  background-color: var(--input-bg);
 }
 
 .hero__search__input {
   border: none;
   width: 27rem;
   @include fontStyle(1.8rem, 500, 1.15);
-  color: $input-text-color;
+  color: var(--input-text-color);
 }
 
 .hero__search__input:focus {
@@ -59,7 +59,7 @@
 
 .hero__search__img {
   padding: 1.7rem;
-  background-color: $light-primary-color;
+  background-color: var(--primary-color);
   border-radius: 50%;
 }
 
@@ -84,11 +84,12 @@
 
 .card__title {
   @include fontStyle(3.6rem, 600, 1.15);
+  color: var(--text-color);
 }
 
 .card__subtitle {
   @include fontStyle(1.6rem, 400, 1.5);
-  color: $input-text-color;
+  color: var(--hero-subtitle);
   text-align: center;
 }
 
@@ -99,14 +100,14 @@
 }
 
 .card__btns > a:first-child {
-  background-color: $light-primary-color;
-  color: $light-background-color;
+  background-color: var(--primary-color);
+  color: var(--input-bg);
   border: none;
 }
 
 .card__btn {
-  color: $light-secondary-color;
-  border: solid 1.5px $header-border-color;
+  border: solid 1.5px var(--header-border-color);
+  color: var(--secondary-color);
 }
 
 .car__cards {
@@ -118,7 +119,7 @@
 .card__car {
   @include boxDisplayFlex(flex, start, center);
   flex-direction: column;
-  background-color: $moon-bg-color;
+  background-color: var(--moon-bg);
   padding: 3rem 2.5rem;
   border-radius: 1.6rem;
   gap: 1.6rem;
@@ -134,13 +135,14 @@
   @include boxDisplayFlex(flex, start, center);
   flex-direction: column;
   gap: 0.8rem;
+
+  color: var(--secondary-color);
 }
 .card__car__title {
   @include fontStyle(2.4rem, 600, 1.2);
 }
 .card__car__subtitle {
   @include fontStyle(1.6rem, 500, 1.2);
-  color: $input-text-color;
 }
 
 .card__speciality {
@@ -159,11 +161,162 @@
   @include boxDisplayFlex(flex, center, center);
   gap: 1.2rem;
   @include fontStyle(1.6rem, 500, 1.2);
+  color: var(--secondary-color);
 }
 
 .card___view-btn {
-  background-color: $light-primary-color;
-  color: $light-background-color;
+  background-color: var(--primary-color);
+  color: var(--input-bg);
+}
+
+// Comunity style start
+
+.comunity {
+  background-color: var(--moon-bg);
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.conmunity__container {
+  height: 47.9rem;
+  @include boxDisplayFlex(flex, center, center);
+  
+  
+}
+
+.comunity__info {
+  width: 45rem;
+  padding: 7rem;
+  background-color: var(--com-info-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.google__logo {
+  @include boxDisplayFlexspaceB(flex, center);
+  gap: 0.8rem;
+}
+
+.google__logo__title {
+  color: #4285f4;
+  @include fontStyle(1.6rem, 500, 1.1);
+}
+.comunity__title {
+  @include fontStyle(3.8rem, 500, 1.3);
+  color: var(--secondary-color);
+  margin-bottom: 1.4rem;
+}
+.comunity__line {
+  background: linear-gradient(90deg, #EA4335 19.83%, #FBBC05 65%, #34A853 82.29%, #4285F4 100%);
+  height: 0.2rem;
+  margin-bottom: 1.4rem;
+}
+
+.instagram__logo__info {
+  @include fontStyle(1.4rem, 400, 1.2);
+  color: var(--white-555);
+  margin-bottom: 1.6rem;
+}
+.instagrem__btn {
+  border: 1.5px solid;
+  border: 1.5px solid;
+
+border-image-source: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+
+
+  background-color: #ffffff;
+  background-image: url("../images/Instagram.png");
+   background-repeat: no-repeat;
+   background-position: center;
+   @include boxDisplayFlex(flex, center, center);
+   width: 19.4rem;
+   height: 5.8rem;
+
+}
+
+.comunity__accaunts {
+  padding: 5rem 4rem;
+  background-color: #299764;
+  height: 47.55rem;
+  border-radius: 0 2rem 2rem 0;
+}
+
+.comunity__accaunts__cards {
+}
+.accaunts__card {
+  background-color: var(--com-info-bg);
+  padding: 2.4rem;
+  width: 42rem;
+  height: 33.3rem;
+  border-radius: 1.6rem;
+}
+
+.comunity__accaunts {
+}
+.comunity__accaunts__cards {
+}
+
+.accaunts__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.profile {
+  @include boxDisplayFlex(flex, center, start);
+  gap: 6.6rem;
+}
+
+.profile__info {
+  @include boxDisplayFlex(flex, center, space-between);
+  gap: 1.2rem;
+  
+}
+
+.profile__info__names {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ava__name {
+  color: var(--secondary-color);
+  @include fontStyle(1.6rem, 600, 1.2);
+
+}
+
+.google__akkaunt {
+  @include fontStyle(1.4rem, 400, 1.2);
+  color: var(--white-555);
+}
+
+.profile__subtitle {
+  @include fontStyle(1.4rem, 400, 1.4);
+  color: var(--secondary-color);
+}
+
+.comunity__card__line {
+  background-color: var(--header-border-color);
+  width: 37.2rem;
+  height: 3px;
+}
+
+.comunity__card__stars {
+  @include boxDisplayFlex(flex, center, start);
+  gap: 1.6rem;
+}
+
+.comunity__card__stars__title {
+  @include fontStyle(1.4rem, 500, 1.2);
+  color: var(--secondary-color);
+}
+
+.star__imgs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 //  brands dtyle start
@@ -173,6 +326,8 @@
   flex-direction: column;
   gap: 3.4rem;
   margin-bottom: 16rem;
+  color: var(--secondary-color);
+  padding-top: 16rem;
 }
 
 .brands__title {
@@ -183,12 +338,17 @@
   gap: 6.6rem;
 }
 
+.brands__images img {
+  color: #fff;
+}
+
 // servise style start
 
 .service {
   @include boxDisplayFlex(flex, center, center);
   flex-direction: column;
   margin-bottom: 16rem;
+  color: var(--secondary-color);
 }
 
 .service__cards {
@@ -199,7 +359,7 @@
 
 .service__card {
   width: 59rem;
-  background-color: $moon-bg-color;
+  background-color: var(--moon-bg);
   @include boxDisplayFlex(flex, start, space-between);
   padding: 4rem 3.2rem;
   border-radius: 2rem;
@@ -212,7 +372,7 @@
 
 .service__card__subtitle {
   @include fontStyle(1.6rem, 400, 1.5);
-  color: $input-text-color;
+  color: var(--secondary-color);
   width: 35.5rem;
 }
 
@@ -220,11 +380,12 @@
 
 .safe {
   padding: 4rem 3.2rem 0rem 3.2rem;
-  border: solid 1.5px $header-border-color;
+  border: solid 1.5px var(--header-border-color);
   border-radius: 2rem;
   @include boxDisplayFlex(flex, start, space-between);
   height: 50rem;
   margin-bottom: 16rem;
+  color: var(--secondary-color);
 }
 
 .safe__titles {
@@ -239,7 +400,7 @@
 
 .safe__subtitle {
   @include fontStyle(1.6rem, 400, 1.5);
-  color: $input-text-color;
+  color: var(--white-555);
   width: 59rem;
   margin-bottom: 9.4rem;
 }
@@ -252,7 +413,7 @@
 .safe__card {
   width: 21rem;
   height: 16rem;
-  background-color: $moon-bg-color;
+  background-color: var(--moon-bg);
   padding: 2rem;
   border-radius: 1.6rem;
   @include boxDisplayFlex(flex, end, start);
@@ -278,78 +439,4 @@
   right: 44rem;
   margin-top: -2rem;
   z-index: -1;
-}
-
-// Footer start
-
-.footer {
-  border-top: solid 1.5px $header-border-color;
-  padding-top: 4rem;
-}
-
-.footer__container {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-}
-
-.footer__first-div {
-  @include boxDisplayFlex(flex, center, space-between);
-}
-
-.logo-div {
-  width: 24rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.logo-div__subtitle {
-  @include fontStyle(1.2rem, 400, 1.7);
-  color: $input-text-color;
-}
-
-.footer__first-list {
-  @include boxDisplayFlex(flex, start, start);
-  gap: 11rem;
-  margin-top: 4rem;
-}
-
-.footer__second-list {
-  @include boxDisplayFlex(flex, start, start);
-  gap: 4.9rem;
-  border-top: solid 1.5px $header-border-color;
-  padding-top: 4rem;
-}
-
-.footer__first-list__item {
-  @include boxDisplayFlex(flex, start, start);
-  flex-direction: column;
-  gap: 1.4rem;
-}
-
-.footer__item__bold {
-  @include fontStyle(1.6rem, 500, 1.2);
-  color: $light-secondary-color;
-}
-
-.footer__item__regular {
-  @include fontStyle(1.4rem, 500, 1.3);
-  color: $input-text-color;
-}
-
-.footer__second-div {
-  @include boxDisplayFlex(flex, center, start);
-  gap: 25rem;
-}
-
-.footer__socials {
-  @include boxDisplayFlex(flex, center, start);
-  gap: 1.5rem;
-}
-
-.arrow-up {
-  padding: 2.8rem;
-  border-radius: 50%;
-  background-color: $light-primary-color;
 }

@@ -10,6 +10,13 @@
       --hover-color: #{$dark-hover-color};
       --link-color: #{$dark-link-color};
       --footer-background: #{$dark-footer-background};
+      --moon-bg: #{$dark-moon-bg-color};
+      --header-border-color: #{$dark-header-border-color};
+      --input-text-color: #{$dark-input-text-color};
+      --input-bg: #ffffff;
+      --hero-subtitle: #ffffff;
+      --white-555: #{$dark-white-555};
+      --com-info-bg: #{$dark-comunity-info-bg};
     } @else if $mode == "light" {
       --primary-color: #{$light-primary-color};
       --secondary-color: #{$light-secondary-color};
@@ -21,8 +28,17 @@
       --hover-color: #{$light-hover-color};
       --link-color: #{$light-link-color};
       --footer-background: #{$light-footer-background};
+      --moon-bg: #{$light-moon-bg-color};
+      --header-border-color: #{$light-header-border-color};
+      --input-text-color: #{$light-input-text-color};
+      --input-bg: #ffffff;
+      --hero-subtitle: #555555;
+      --white-555: #{$light-white-555};
+      --com-info-bg: #{$light-community-info-bg}
     }
   }
+
+
 
   @mixin boxDisplayFlex ($df, $ai, $jc) {
      display: $df;

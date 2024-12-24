@@ -24,12 +24,36 @@
     text-decoration: none;
   }
   
+  :root {
+    @include theme(light);
+  }
+
   body {
     display: flex;
     flex-direction: column;
     height: 100%;
-
+    background-color: var(--background-color);
     font-family: $main-ff;
+  }
+
+  body.dark-mode {
+    --primary-color: #{$dark-primary-color};
+      --secondary-color: #{$dark-secondary-color};
+      --background-color: #{$dark-background-color};
+      --card-background-color: #{$dark-card-background-color};
+      --text-color: #{$dark-text-color};
+      --muted-text-color: #{$dark-muted-text-color};
+      --border-color: #{$dark-border-color};
+      --hover-color: #{$dark-hover-color};
+      --link-color: #{$dark-link-color};
+      --footer-background: #{$dark-footer-background};
+      --moon-bg: #{$dark-moon-bg-color};
+      --header-border-color: #{$dark-header-border-color};
+      --input-text-color: #{$dark-input-text-color};
+      --input-bg: #ffffff;
+      --hero-subtitle: #ffffff;
+      --white-555: #{$dark-white-555};
+      --com-info-bg: #{$dark-comunity-info-bg};
   }
   
   main {
